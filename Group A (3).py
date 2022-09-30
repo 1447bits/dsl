@@ -40,3 +40,54 @@ for i in range (len(list)):
             padd 
         print (list)
 # print (record)
+
+
+
+
+
+
+
+
+
+
+
+
+
+# check
+
+book = []
+
+n = 100
+
+
+
+for i in range (n):
+    temp = []
+    item = input("Name : ")
+    if (item == "exit" or item == "Exit"):
+        break
+    cost = int(input("cost : "))
+    temp.append(item)
+    temp.append(cost)
+    book.append(temp)
+
+
+# to delete duplicate entries :)
+
+# for i in range (len(book)):
+#     for j in range (len(book) - i-1):
+#         if (book[i][0] == book[i + j][0]):
+#             # print("i = ", i, "j = ", j+i, "\n")
+#             # print ("book i = ",book[i], "book j+i = ", book[j+i]) 
+#             count = i+j
+#         if (count > 0):
+#             del book[count:count+1]
+#         i = 0
+            
+
+# display books in ascending order of cost
+
+for i in range (0, )
+
+
+print (book)
