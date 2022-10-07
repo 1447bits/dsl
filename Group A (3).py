@@ -1,93 +1,80 @@
-# Write a Python program for department library which has N books, write functions for
-# following:
+# Write a Python program for department library which has N books, write functions for following:
 # a) Delete the duplicate entries
 # b) Display books in ascending order based on cost of books
 # c) Count number of books with cost more than 500.
 # d) Copy books in a new list which has cost less than 500.
 # 4 Write a Python program that computes the net amount of a bank
 
-def create (n, list):
-    sublist = []
+
+def swap(list, a, b):
+    temp = list[a]
+    list[a] = list[b]
+    list[b] = temp
+
+def InPut (lib, n):
+    print("Lets Enter Recordds :)")
     for i in range (n):
-        name = input("Enter Book name :") 
-        cost = int(input("Enter Book cost : ")) 
-        sublist.append(name)
-        sublist.append(cost)
-        list.append(sublist)
-        sublist = []
-    
-def del_dup(list):
-    for i in range (len(list)):
-        for j in range (i, len(list) - i):
-            if (list[i][1] == list[j][1]):
-                list[j:j+1]
-    
-    
-record = []
-print ("*WELCOME TO LIBRARY*")
+        item = []
+        book = input("Enter book : ")
+        if (book == "Exit" or book == "exit"):
+            break
+        cost = int(input("Enter cost : "))
+        item.append(book)
+        item.append(cost)
+        lib.append(item)
 
-# records = int(input("Enter the number of records you want to add : "))
-# create(records, record)
-# del_dup(record)
+def del_dup (lib):
+    temp_lib = []
+    [temp_lib.append(x) for x in lib if x not in temp_lib]
+    return temp_lib
 
-record = [['okey', 12], ['okey', 123], ['adksjh', 123], ['okey', 123], ['adksjh', 13]]
+def sortoncost(lib):
+    count = 0
+    sortedlib = lib
+    i = 0
+    # print(sortedlib)
+    for i in range (len(lib) - 1):
+        if (lib[i][1] > lib[i+1][1]):
+            swap(lib, i, i+1)
+            count += 1
+    if (count == 0):
+        return sortedlib
+    else :
+        sortoncost(sortedlib)
+    return sortedlib
 
-list = record
-for i in range (len(list)):
-    for j in range (i+1 , len(list)):
-        if (list[i][0] == list[j][0]):
-            list.pop(i)
-            padd 
-        print (list)
-# print (record)
+def morethan500(lib):
+    count = 0 
+    for book in lib:
+        if (book[1] > 500):
+            count += 1
+    return count
 
+def bookmorethan500(lib):
+    templib = []
+    for i in range(len(lib)):
+        if (lib[i][1] > 500):
+            templib.append(lib[i])
+    return templib
 
+Library = []
 
+num_of_books = int(input("enter total number of books in Library : ")) 
+InPut(Library, num_of_books)
 
-
-
-
-
-
-
-
-
-
-# check
-
-book = []
-
-n = 100
-
-
-
-for i in range (n):
-    temp = []
-    item = input("Name : ")
-    if (item == "exit" or item == "Exit"):
-        break
-    cost = int(input("cost : "))
-    temp.append(item)
-    temp.append(cost)
-    book.append(temp)
+print("choose one :)")
 
 
-# to delete duplicate entries :)
+print("Delete Duplicate :)")
+print("original Library = ",Library)
+print("del dup = ",del_dup(Library))
 
-# for i in range (len(book)):
-#     for j in range (len(book) - i-1):
-#         if (book[i][0] == book[i + j][0]):
-#             # print("i = ", i, "j = ", j+i, "\n")
-#             # print ("book i = ",book[i], "book j+i = ", book[j+i]) 
-#             count = i+j
-#         if (count > 0):
-#             del book[count:count+1]
-#         i = 0
-            
+print("books with cost more than 500")
+print(morethan500(Library))
 
-# display books in ascending order of cost
+print("og library = ", Library)
+sortoncost(Library)
+print("sorted Library = ",sortoncost(Library))
 
-for i in range (0, )
-
-
-print (book)
+books_cost_more_than_500 = bookmorethan500(Library)
+print(books_cost_more_than_500)

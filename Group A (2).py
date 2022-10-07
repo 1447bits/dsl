@@ -52,7 +52,7 @@ for i in range (n):
     else :
         marks.append(item)
 
-print(marks)
+print(marks)    
 
 # a) The average score of class
 print ("average score is ")
