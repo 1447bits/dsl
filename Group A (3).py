@@ -6,6 +6,9 @@
 # 4 Write a Python program that computes the net amount of a bank
 
 
+from optparse import Option
+
+
 def swap(list, a, b):
     temp = list[a]
     list[a] = list[b]
@@ -62,19 +65,28 @@ Library = []
 num_of_books = int(input("enter total number of books in Library : ")) 
 InPut(Library, num_of_books)
 
-print("choose one :)")
+print("choose an Option : ")
+print("\n1. delete duplicate entries\n2. number of books cost more than 500\n3. sort books ascending order of cost\n4. create new list of books cost more tha 500 ")
+choice = int(input("choice :: "))
 
+if (choice == 1):
+        
+    print("Delete Duplicate :)")
+    print("original Library = ",Library)
+    print("del dup = ",del_dup(Library))
 
-print("Delete Duplicate :)")
-print("original Library = ",Library)
-print("del dup = ",del_dup(Library))
+elif (choice == 2):
+    print("books with cost more than 500")
+    print(morethan500(Library))
 
-print("books with cost more than 500")
-print(morethan500(Library))
+elif (choice == 3):
+    print("og library = ", Library)
+    sortoncost(Library)
+    print("sorted Library = ",sortoncost(Library))
 
-print("og library = ", Library)
-sortoncost(Library)
-print("sorted Library = ",sortoncost(Library))
-
-books_cost_more_than_500 = bookmorethan500(Library)
-print(books_cost_more_than_500)
+elif (choice == 4):
+    books_cost_more_than_500 = bookmorethan500(Library)
+    print("books_cost_more_than_500 = ",books_cost_more_than_500 )
+ 
+else:
+    print("inappropriate choice :|")
