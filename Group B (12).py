@@ -67,8 +67,8 @@ while (1):
     rec.append(temp)
 
 sorted_rec = sorted(rec)
-x = input("find name : ")
-y = int(input("find Num : "))
+x = input("find name (using Binary Search) : ")
+y = int(input("find Num (using Fibonacci Search) : "))
 
 
 result = binarySearch(sorted_rec, 0, len(sorted_rec)-1, x)
