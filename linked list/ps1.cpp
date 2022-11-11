@@ -1,3 +1,5 @@
+// this file has segmentation errors, will be resolved soon !! 
+
 #include <iostream>
 using namespace std;
 
