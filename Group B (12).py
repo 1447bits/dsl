@@ -33,7 +33,7 @@ def fibonacci_search(lst, target):
     return None
 
 def conditioncheck(str1, str2):
-    alph = "abcdefghijklmnopqurstuvwxyz"
+    alph = "abcdefghijklmnopqurstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
     if alph.index(str1[0]) > alph.index(str2[0]):
         return 1
     elif alph.index(str1[0]) < alph.index(str2[0]):
@@ -80,8 +80,9 @@ if (result != None):
     print(sorted_rec[result])
 else: 
     print ("Friend not found")
+    z = int(input("enter the number: "))
     temp.append(x)
-    temp.append(y)
+    temp.append(z)
     rec.append(temp)
     sorted_rec = sorted(rec)
     print(sorted_rec)
