@@ -33,7 +33,7 @@ def fibonacci_search(lst, target):
     return None
 
 def conditioncheck(str1, str2):
-    alph = "abcdefghijklmnopqurstuvwxyz"
+    alph = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQqRrSstTuUvVwWxXyYzZ"
     if alph.index(str1[0]) > alph.index(str2[0]):
         return 1
     elif alph.index(str1[0]) < alph.index(str2[0]):
@@ -44,7 +44,7 @@ def conditioncheck(str1, str2):
 def binarySearch(arr, l, r, x):
     if r >= l:
         mid = l + (r - l) // 2
-        print(mid)
+        # print(mid)
         if conditioncheck(arr[mid][0], x) == -1:
             return mid
         elif conditioncheck(arr[mid][0], x) == 1:
