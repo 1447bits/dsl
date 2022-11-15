@@ -19,3 +19,21 @@ a) Selection Sort
 b) Bubble sort and display top five scores.
 
 - Question 6 (B16) : Write a Python program to store first year percentage of students in array. Write function for sorting array of floating point numbers in ascending order using quick sort and display top five scores
+
+- Question 7 (C19) : Department of Computer Engineering has student's club named 'Pinnacle Club'.
+Students of second, third and final year of department can be granted membership
+on request. Similarly one may cancel the membership of club. First node is reserved for president of club and last node is reserved for secretary of club. Write C++ program to maintain club member‘s information using singly linked list. Store student PRN and Name. Write functions to:
+a) Add and delete the members as well as president or even secretary.
+b) Compute total number of members of club
+c) Display members
+d) Two linked lists exists for two divisions. Concatenate two lists
+
+- Quesrion 8 (C20) : The ticket booking system of Cinemax theatre has to be implemented using C++ program.
+There are 10 rows and 7 seats in each row. Doubly circular linked list has to be maintained
+to keep track of free seats at rows. Assume some random booking to start with. Use array to store
+pointers (Head pointer) to each row. 
+On demand
+a) The list of available seats is to be displayed
+b) The seats are to be booked
+c) The booking can be cancelled
+
