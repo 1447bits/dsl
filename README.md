@@ -45,4 +45,6 @@ with functions-
 a) To print original string followed by reversed string using stack 
 b) To check whether given string is palindrome or not
 
-- Question 10 : ..
+- Question 10 (D26): In any language program mostly syntax error occurs due to unbalancing delimiter such as
+(),{},[]. Write C++ program using stack to check whether given expression is well
+parenthesized or not.
