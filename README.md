@@ -54,4 +54,13 @@ of a job queue by an operating system. If the operating system does not use prio
 the jobs are processed in the order they enter the system. Write C++ program for simulating
 job queue. Write functions to add job and delete job from queue.
 
--
+- Question 12 (E31) : A double-ended queue (deque) is a linear list in which additions and deletions may be made
+at either end. Obtain a data representation mapping a deque into a one-dimensional array.
+Write C++ program to simulate deque with functions to add and delete elements from either
+end of the deque.
+
+- Question 13 (E32) : Pizza parlor accepting maximum M orders. Orders are served in first come first served basis.
+Order once placed cannot be cancelled. Write C++ program to simulate the system using
+circular queue using array.
+
+#
