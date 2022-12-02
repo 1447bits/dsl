@@ -48,3 +48,10 @@ b) To check whether given string is palindrome or not
 - Question 10 (D26): In any language program mostly syntax error occurs due to unbalancing delimiter such as
 (),{},[]. Write C++ program using stack to check whether given expression is well
 parenthesized or not.
+
+- Question 11 (E29) : Queues are frequently used in computer programming, and a typical example is the creation
+of a job queue by an operating system. If the operating system does not use priorities, then
+the jobs are processed in the order they enter the system. Write C++ program for simulating
+job queue. Write functions to add job and delete job from queue.
+
+-
