@@ -1,6 +1,7 @@
 # Welcome !!
 # DSL-questions
-This repo is for data structure question from SPPU AIDS third-sem  
+This repo is for data structure question from SPPU AIDS third-sem
+
 # Questions 
 - Question 1 (A1) : SET Theory
 
@@ -63,4 +64,4 @@ end of the deque.
 Order once placed cannot be cancelled. Write C++ program to simulate the system using
 circular queue using array.
 
-#
+##
