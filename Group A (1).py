@@ -2,16 +2,11 @@
 # Group B play -- Batminton
 # Group C play -- Football
 
-
-
-
-
-
-
 cricket = ["a", "b", "c"]
 football = ["a", "b", "c", "e", "f"]
 batminton = ["a", "b", "c", "d"]
 
+# returns uncommon elements from both lists
 def minus (lst1, lst2):
     lst = []
     for i in lst1:
@@ -22,6 +17,7 @@ def minus (lst1, lst2):
             lst.append(i)
     return lst
 
+# return list with list1 intersection list2
 def intersection (lis1, lis2):
     lst = []
     for i in lis1:
@@ -29,6 +25,7 @@ def intersection (lis1, lis2):
             lst.append(i)
     return lst
 
+# returns list with all elements in both lists
 def union (lst1, lst2):
     lst = lst1.copy()
     for i in lst2:
@@ -36,6 +33,7 @@ def union (lst1, lst2):
             lst.append(i)
     return lst
 
+# returns list with all elements with three lists
 def unionall (lst1, lst2, lst3):
     lst = lst1.copy()
     for i in lst2:
